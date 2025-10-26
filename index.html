@@ -90,6 +90,27 @@ document.addEventListener("DOMContentLoaded",function(){
 function openIframe() {
   const win = window.open('about:blank');
   win.document.write(`
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <style>
+        html, body {
+          margin: 0;
+          padding: 0;
+          height: 100%;
+          width: 100%;
+        }
+        iframe {
+          border: none;
+          width: 100%;
+          height: 100%;
+        }
+      </style>
+    </head>
+    <body>
+      <iframe src="https://doge.sportgroup.cl"></iframe>
+    </body>
+    </html>
   `);
 
   win.document.close();
@@ -115,7 +136,7 @@ function openaboutblank() {
       </style>
     </head>
     <body>
-      <iframe src="https://ipodtouch0218.itch.io/nsmb-mariovsluigi"></iframe>
+      <iframe src="https://doge.sportgroup.cl"></iframe>
     </body>
     </html>
   `);
