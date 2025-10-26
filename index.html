@@ -1,81 +1,93 @@
+
+<!-- saved from url=(0026)https://rel.sportgroup.cl/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Google Classroom</title>
+<style type="text/css" id="operaUserStyle"></style></head>
+<body>
+<button onclick="openaboutblank()">Open in about:blank"</button>
+<p><input type="text" id="titleInput"></p>
+<h1>
+
+</h1>
+ <h1>
+  
+</h1>
+<script>
+document.addEventListener("DOMContentLoaded",function(){
+ var input=document.getElementById("titleInput");
+ input.value=document.title;
+ input.addEventListener("input",function(){
+  document.title=this.value;
+ });
+});
+function openIframe() {
+  const win = window.open('about:blank');
+  win.document.write(`
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <style>
+        html, body {
+          margin: 0;
+          padding: 0;
+          height: 100%;
+          width: 100%;
+        }
+        iframe {
+          border: none;
+          width: 100%;
+          height: 100%;
+        }
+      </style>
+    </head>
+    <body>
+      <iframe src="https://doge.sportgroup.cl"></iframe>
+    </body>
+    </html>
+  `);
+
+  win.document.close();
+}
+function openaboutblank() {
+  const win = window.open('about:blank');
+  win.document.write(`
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <style>
+        html, body {
+          margin: 0;
+          padding: 0;
+          height: 100%;
+          width: 100%;
+        }
+        iframe {
+          border: none;
+          width: 100%;
+          height: 100%;
+        }
+      </style>
+    </head>
+    <body>
+      <iframe src="https://doge.sportgroup.cl"></iframe>
+    </body>
+    </html>
+  `);
+
+  win.document.close();
+}
+</script>
+
+
+</body></html>
+</script>
+</body></html>
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Google Classroom</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      background: #f8f8f8;
-      text-align: center;
-      margin-top: 40px;
-    }
-    button {
-      padding: 10px 20px;
-      font-size: 16px;
-      border: none;
-      background: #4285F4;
-      color: white;
-      border-radius: 6px;
-      cursor: pointer;
-      margin: 5px;
-    }
-    button:hover {
-      background: #3367D6;
-    }
-    img {
-      margin-top: 30px;
-      width: 400px;
-    }
-  </style>
+  <title>Show Image</title>
 </head>
 <body>
-  <!-- Two cloned buttons -->
-  <button onclick="openAboutBlank()">Open in about:blank</button>
-  <button onclick="openAboutBlank()">Open in about:blank</button>
-
-  <p><input type="text" id="titleInput"></p>
-
-  <img src="keywords.png" alt="if this aint show FAHHHHHHH">
-
-  <script>
-    // make input edit page title
-    document.addEventListener("DOMContentLoaded", function() {
-      const input = document.getElementById("titleInput");
-      input.value = document.title;
-      input.addEventListener("input", function() {
-        document.title = this.value;
-      });
-    });
-
-    // open site in about:blank
-    function openAboutBlank() {
-      const win = window.open('about:blank');
-      win.document.write(`
-        <!DOCTYPE html>
-        <html>
-        <head>
-          <style>
-            html, body {
-              margin: 0;
-              padding: 0;
-              height: 100%;
-              width: 100%;
-            }
-            iframe {
-              border: none;
-              width: 100%;
-              height: 100%;
-            }
-          </style>
-        </head>
-        <body>
-          <iframe src="https://doge.sportgroup.cl"></iframe>
-        </body>
-        </html>
-      `);
-      win.document.close();
-    }
-  </script>
+  <img src="keywords.png" alt="if this aint show FAHHHHHHH" width="400">
 </body>
 </html>
